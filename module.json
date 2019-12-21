@@ -1,0 +1,7 @@
+{
+    "author": "Nylu",
+    "description": "places beacon markers on specified NPCs",
+    "disableAutoUpdate": false,
+    "name": "NPC Finder",
+    "servers": ["https://raw.githubusercontent.com/NyluNyan/NPC-Finder/master/"]
+}
