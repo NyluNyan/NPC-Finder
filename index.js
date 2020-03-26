@@ -39,7 +39,7 @@ module.exports = function NPC_Finder(mod) {
 					mod.unhook(hooks[1]);
 					hooks = [];
 					var x = Markers.length/2;
-					for(i = 0; i < x; i++) ClearAllMarks(0);
+					for(var i = 0; i < x; i++) ClearAllMarks(0);
 					mod.command.message('NPC markers disabled');
 				}
 				break;
@@ -68,7 +68,7 @@ module.exports = function NPC_Finder(mod) {
 				else if(isNaN(zone))
 				{
 					var TID = [];
-					for(i = 2; i < IDs.length; i += 3) TID.push(IDs[i].toLowerCase());
+					for(var i = 2; i < IDs.length; i += 3) TID.push(IDs[i].toLowerCase());
 					i = TID.indexOf(zone.toLowerCase());
 					if(i !== -1)
 					{
@@ -120,6 +120,6 @@ module.exports = function NPC_Finder(mod) {
 	function ClearAllMarks()
 	{
 		var x = Markers.length/2;
-		if(x) for(i = 0; i < x; i++) ClearMarker(0);
+		if(x) for(var i = 0; i < x; i++) ClearMarker(0);
 	}
 }
